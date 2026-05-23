@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Admin — Botas Rei</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-body">
+
+  <!-- ░░ LOGIN ░░ -->
+  <div id="admin-login">
+    <div class="login-card">
+      <svg class="logo-svg" viewBox="0 0 22 26" fill="var(--accent)" aria-hidden="true" style="width:48px;height:56px;display:block;margin:0 auto 1rem"><rect x="3" y="1" width="9" height="17" rx="2"/><path d="M3 16h13c1.5 0 3.5 1.5 3.5 3.5V23a1 1 0 0 1-1 1H1.5a1 1 0 0 1-1-1v-2.5C.5 18 1.5 16 3 16z"/></svg>
+      <h1>Área Administrativa</h1>
+      <p>Entre com sua senha para editar o conteúdo do site.</p>
+      <div class="login-field">
+        <label for="login-pass">Senha</label>
+        <input type="password" id="login-pass" placeholder="Digite a senha..." autocomplete="current-password" />
+      </div>
+      <div class="login-error" id="login-error">Senha incorreta. Tente novamente.</div>
+      <button class="btn-login" id="btn-login">Entrar</button>
+      <p style="margin-top:1.5rem; font-size:0.75rem; color:var(--text-faint);">Senha padrão: <strong style="color:var(--text-muted)">admin123</strong></p>
+    </div>
+  </div>
+
+  <!-- ░░ PAINEL ░░ -->
+  <div id="admin-panel" style="display:none">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar-logo">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-svg" viewBox="0 0 22 26" fill="var(--accent)" aria-hidden="true"><rect x="3" y="1" width="9" height="17" rx="2"/><path d="M3 16h13c1.5 0 3.5 1.5 3.5 3.5V23a1 1 0 0 1-1 1H1.5a1 1 0 0 1-1-1v-2.5C.5 18 1.5 16 3 16z"/></svg>
+          <span class="logo-text">Botas Rei</span>
+        </a>
+      </div>
+      <nav class="admin-nav">
+        <div class="admin-nav-item active" data-section="loja">
+          <span class="nav-icon">🏪</span> Dados da Loja
+        </div>
+        <div class="admin-nav-item" data-section="hero">
+          <span class="nav-icon">🎯</span> Seção Hero
+        </div>
+        <div class="admin-nav-item" data-section="stats">
+          <span class="nav-icon">📊</span> Estatísticas
+        </div>
+        <div class="admin-nav-item" data-section="produtos">
+          <span class="nav-icon">👢</span> Produtos
+        </div>
+        <div class="admin-nav-item" data-section="diferenciais">
+          <span class="nav-icon">⭐</span> Diferenciais
+        </div>
+        <div class="admin-nav-item" data-section="depoimentos">
+          <span class="nav-icon">💬</span> Depoimentos
+        </div>
+        <div class="admin-nav-item" data-section="contato">
+          <span class="nav-icon">📞</span> Contato / Rodapé
+        </div>
+      </nav>
+      <div class="admin-sidebar-footer">
+        <button class="btn-preview" onclick="window.open('index.html','_blank')">👁 Ver Site</button>
+        <button class="btn-logout" id="btn-logout">🚪 Sair</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <div>
+          <h1 id="admin-section-title">Dados da Loja</h1>
+          <p>Edite os textos e clique em Salvar Alterações.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <span class="save-indicator" id="save-indicator">✅ Salvo!</span>
+          <button class="btn-save" id="btn-save">💾 Salvar Alterações</button>
+        </div>
+      </header>
+
+      <div class="admin-content">
+
+        <!-- ── LOJA ── -->
+        <div class="editor-section active" id="section-loja">
+          <div class="editor-section-header">
+            <span class="section-icon">🏪</span>
+            <h2>Dados da Loja</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-tip">
+              <strong>Dica:</strong> Esses dados aparecem no cabeçalho, rodapé e links de WhatsApp do site. O número de WhatsApp deve estar no formato internacional sem espaços: <strong>5511999999999</strong>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Nome da Loja</label>
+                <input type="text" id="f-store-name" placeholder="Botas Rei" />
+              </div>
+              <div class="editor-group">
+                <label>Slogan</label>
+                <input type="text" id="f-store-tagline" placeholder="Qualidade que pisa forte" />
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Telefone (exibição)</label>
+                <input type="text" id="f-store-phone" placeholder="(11) 99999-9999" />
+              </div>
+              <div class="editor-group">
+                <label>WhatsApp (número internacional)</label>
+                <input type="text" id="f-store-whatsapp" placeholder="5511999999999" />
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>E-mail</label>
+                <input type="email" id="f-store-email" placeholder="contato@botasrei.com.br" />
+              </div>
+              <div class="editor-group">
+                <label>Instagram</label>
+                <input type="text" id="f-store-instagram" placeholder="@botasrei" />
+              </div>
+            </div>
+            <div class="editor-group">
+              <label>Endereço</label>
+              <input type="text" id="f-store-address" placeholder="Rua das Botas, 123 - São Paulo, SP" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ── HERO ── -->
+        <div class="editor-section" id="section-hero">
+          <div class="editor-section-header">
+            <span class="section-icon">🎯</span>
+            <h2>Seção Hero (Topo da Página)</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-tip">
+              <strong>Dica:</strong> Esta é a primeira coisa que o visitante vê. Use textos impactantes e diretos.
+            </div>
+            <div class="editor-group">
+              <label>Tag / Destaque (ex: Nova Coleção 2026)</label>
+              <input type="text" id="f-hero-badge" placeholder="Nova Coleção 2026" />
+            </div>
+            <div class="editor-group">
+              <label>Título Principal</label>
+              <input type="text" id="f-hero-title" placeholder="Botas que Contam Histórias" />
+            </div>
+            <div class="editor-group">
+              <label>Subtítulo / Descrição</label>
+              <textarea id="f-hero-subtitle" rows="3" placeholder="Couro legítimo, conforto incomparável..."></textarea>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Botão Principal</label>
+                <input type="text" id="f-hero-cta-primary" placeholder="Ver Coleção" />
+              </div>
+              <div class="editor-group">
+                <label>Botão WhatsApp</label>
+                <input type="text" id="f-hero-cta-secondary" placeholder="Falar no WhatsApp" />
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Selo de Confiança 1</label>
+                <input type="text" id="f-hero-trust1" placeholder="⭐ 4.9/5 em avaliações" />
+              </div>
+              <div class="editor-group">
+                <label>Selo de Confiança 2</label>
+                <input type="text" id="f-hero-trust2" placeholder="🚚 Frete grátis acima de R$300" />
+              </div>
+            </div>
+            <div class="editor-group">
+              <label>Selo de Confiança 3</label>
+              <input type="text" id="f-hero-trust3" placeholder="🔄 30 dias para trocar" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STATS ── -->
+        <div class="editor-section" id="section-stats">
+          <div class="editor-section-header">
+            <span class="section-icon">📊</span>
+            <h2>Estatísticas (Barra de Números)</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-tip">
+              <strong>Dica:</strong> Números impressionantes aumentam a credibilidade. Use o símbolo <strong>+</strong> ou <strong>/5</strong> para indicar escalas (ex: 5.000+, 4.9/5).
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Clientes</label>
+                <input type="text" id="f-stats-clientes" placeholder="5.000+" />
+              </div>
+              <div class="editor-group">
+                <label>Anos de Experiência</label>
+                <input type="text" id="f-stats-anos" placeholder="15+" />
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Cidades Atendidas</label>
+                <input type="text" id="f-stats-cidades" placeholder="500+" />
+              </div>
+              <div class="editor-group">
+                <label>Modelos Disponíveis</label>
+                <input type="text" id="f-stats-modelos" placeholder="80+" />
+              </div>
+            </div>
+            <div class="editor-group" style="max-width:300px">
+              <label>Avaliação Média</label>
+              <input type="text" id="f-stats-avaliacao" placeholder="4.9/5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PRODUTOS ── -->
+        <div class="editor-section" id="section-produtos">
+          <div class="editor-section-header">
+            <span class="section-icon">👢</span>
+            <h2>Produtos / Coleções</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-tip">
+              <strong>Dica:</strong> Cada produto tem nome, descrição, preço e etiqueta (ex: Mais Vendida, Nova, Destaque).
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Título da Seção</label>
+                <input type="text" id="f-col-title" placeholder="Nossas Coleções" />
+              </div>
+              <div class="editor-group">
+                <label>Subtítulo da Seção</label>
+                <input type="text" id="f-col-subtitle" placeholder="Cada bota criada com atenção..." />
+              </div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Produto 1 — Clássica</h3>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Nome</label>
+                  <input type="text" id="f-p1-name" placeholder="Clássica" />
+                </div>
+                <div class="editor-group">
+                  <label>Preço</label>
+                  <input type="text" id="f-p1-price" placeholder="R$ 349,00" />
+                </div>
+              </div>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Etiqueta</label>
+                  <input type="text" id="f-p1-badge" placeholder="Mais Vendida" />
+                </div>
+                <div class="editor-group">
+                  <label>Texto do Botão</label>
+                  <input type="text" id="f-p1-cta" placeholder="Pedir Agora" />
+                </div>
+              </div>
+              <div class="editor-group">
+                <label>Descrição</label>
+                <textarea id="f-p1-desc" rows="2"></textarea>
+              </div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Produto 2 — Western</h3>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Nome</label>
+                  <input type="text" id="f-p2-name" placeholder="Western" />
+                </div>
+                <div class="editor-group">
+                  <label>Preço</label>
+                  <input type="text" id="f-p2-price" placeholder="R$ 429,00" />
+                </div>
+              </div>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Etiqueta</label>
+                  <input type="text" id="f-p2-badge" placeholder="Destaque" />
+                </div>
+                <div class="editor-group">
+                  <label>Texto do Botão</label>
+                  <input type="text" id="f-p2-cta" placeholder="Pedir Agora" />
+                </div>
+              </div>
+              <div class="editor-group">
+                <label>Descrição</label>
+                <textarea id="f-p2-desc" rows="2"></textarea>
+              </div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Produto 3 — Executiva</h3>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Nome</label>
+                  <input type="text" id="f-p3-name" placeholder="Executiva" />
+                </div>
+                <div class="editor-group">
+                  <label>Preço</label>
+                  <input type="text" id="f-p3-price" placeholder="R$ 389,00" />
+                </div>
+              </div>
+              <div class="editor-row">
+                <div class="editor-group">
+                  <label>Etiqueta</label>
+                  <input type="text" id="f-p3-badge" placeholder="Nova" />
+                </div>
+                <div class="editor-group">
+                  <label>Texto do Botão</label>
+                  <input type="text" id="f-p3-cta" placeholder="Pedir Agora" />
+                </div>
+              </div>
+              <div class="editor-group">
+                <label>Descrição</label>
+                <textarea id="f-p3-desc" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DIFERENCIAIS ── -->
+        <div class="editor-section" id="section-diferenciais">
+          <div class="editor-section-header">
+            <span class="section-icon">⭐</span>
+            <h2>Diferenciais / Por Que Nos Escolher</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Título da Seção</label>
+                <input type="text" id="f-svc-title" placeholder="Por Que Nos Escolher" />
+              </div>
+              <div class="editor-group">
+                <label>Subtítulo</label>
+                <input type="text" id="f-svc-subtitle" placeholder="Mais de 15 anos no mercado..." />
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-subsection">
+                <h3>Diferencial 1</h3>
+                <div class="editor-group"><label>Ícone (emoji)</label><input type="text" id="f-s1-icon" placeholder="🏆" /></div>
+                <div class="editor-group"><label>Título</label><input type="text" id="f-s1-title" /></div>
+                <div class="editor-group"><label>Descrição</label><textarea id="f-s1-desc" rows="2"></textarea></div>
+              </div>
+              <div class="editor-subsection">
+                <h3>Diferencial 2</h3>
+                <div class="editor-group"><label>Ícone (emoji)</label><input type="text" id="f-s2-icon" placeholder="🚚" /></div>
+                <div class="editor-group"><label>Título</label><input type="text" id="f-s2-title" /></div>
+                <div class="editor-group"><label>Descrição</label><textarea id="f-s2-desc" rows="2"></textarea></div>
+              </div>
+            </div>
+            <div class="editor-row">
+              <div class="editor-subsection">
+                <h3>Diferencial 3</h3>
+                <div class="editor-group"><label>Ícone (emoji)</label><input type="text" id="f-s3-icon" placeholder="🔄" /></div>
+                <div class="editor-group"><label>Título</label><input type="text" id="f-s3-title" /></div>
+                <div class="editor-group"><label>Descrição</label><textarea id="f-s3-desc" rows="2"></textarea></div>
+              </div>
+              <div class="editor-subsection">
+                <h3>Diferencial 4</h3>
+                <div class="editor-group"><label>Ícone (emoji)</label><input type="text" id="f-s4-icon" placeholder="🛡️" /></div>
+                <div class="editor-group"><label>Título</label><input type="text" id="f-s4-title" /></div>
+                <div class="editor-group"><label>Descrição</label><textarea id="f-s4-desc" rows="2"></textarea></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEPOIMENTOS ── -->
+        <div class="editor-section" id="section-depoimentos">
+          <div class="editor-section-header">
+            <span class="section-icon">💬</span>
+            <h2>Depoimentos de Clientes</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-tip">
+              <strong>Dica:</strong> Para a foto do cliente, use uma URL de imagem. Sugestão: adicione no Google Drive e copie o link público. Ou use fotos do Unsplash: <strong>https://images.unsplash.com/photo-ID?w=100&h=100&fit=crop</strong>
+            </div>
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Título da Seção</label>
+                <input type="text" id="f-test-title" />
+              </div>
+              <div class="editor-group">
+                <label>Subtítulo</label>
+                <input type="text" id="f-test-subtitle" />
+              </div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Depoimento 1</h3>
+              <div class="editor-row">
+                <div class="editor-group"><label>Nome</label><input type="text" id="f-t1-name" /></div>
+                <div class="editor-group"><label>Cargo / Cidade</label><input type="text" id="f-t1-role" /></div>
+              </div>
+              <div class="editor-group"><label>URL da Foto (opcional)</label><input type="url" id="f-t1-avatar" /></div>
+              <div class="editor-group"><label>Depoimento</label><textarea id="f-t1-text" rows="3"></textarea></div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Depoimento 2</h3>
+              <div class="editor-row">
+                <div class="editor-group"><label>Nome</label><input type="text" id="f-t2-name" /></div>
+                <div class="editor-group"><label>Cargo / Cidade</label><input type="text" id="f-t2-role" /></div>
+              </div>
+              <div class="editor-group"><label>URL da Foto (opcional)</label><input type="url" id="f-t2-avatar" /></div>
+              <div class="editor-group"><label>Depoimento</label><textarea id="f-t2-text" rows="3"></textarea></div>
+            </div>
+
+            <div class="editor-subsection">
+              <h3>Depoimento 3</h3>
+              <div class="editor-row">
+                <div class="editor-group"><label>Nome</label><input type="text" id="f-t3-name" /></div>
+                <div class="editor-group"><label>Cargo / Cidade</label><input type="text" id="f-t3-role" /></div>
+              </div>
+              <div class="editor-group"><label>URL da Foto (opcional)</label><input type="url" id="f-t3-avatar" /></div>
+              <div class="editor-group"><label>Depoimento</label><textarea id="f-t3-text" rows="3"></textarea></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CONTATO / RODAPÉ ── -->
+        <div class="editor-section" id="section-contato">
+          <div class="editor-section-header">
+            <span class="section-icon">📞</span>
+            <h2>Seção de Contato e Rodapé</h2>
+          </div>
+          <div class="editor-section-body">
+            <div class="editor-row">
+              <div class="editor-group">
+                <label>Título da Seção de Contato</label>
+                <input type="text" id="f-contact-title" />
+              </div>
+              <div class="editor-group">
+                <label>Subtítulo</label>
+                <input type="text" id="f-contact-subtitle" />
+              </div>
+            </div>
+            <div class="editor-group">
+              <label>Mensagem de Sucesso do Formulário</label>
+              <input type="text" id="f-contact-success" />
+            </div>
+            <hr style="border-color:var(--border);margin:1.5rem 0;" />
+            <div class="editor-group">
+              <label>Descrição no Rodapé</label>
+              <input type="text" id="f-footer-desc" />
+            </div>
+            <div class="editor-group">
+              <label>Copyright</label>
+              <input type="text" id="f-footer-copy" placeholder="© 2026 Botas Rei. Todos os direitos reservados." />
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /admin-content -->
+    </main>
+  </div><!-- /admin-panel -->
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

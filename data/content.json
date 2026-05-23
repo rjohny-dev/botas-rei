@@ -1,0 +1,123 @@
+{
+  "store": {
+    "name": "Botas Rei",
+    "tagline": "Direto de Franca-SP pra você",
+    "phone": "(16) 99123-4567",
+    "email": "contato@botasrei.com.br",
+    "address": "Rua Tiradentes, 890 — Franca, SP · 14400-000",
+    "whatsapp": "5516991234567",
+    "instagram": "@botasrei.franca"
+  },
+  "hero": {
+    "badge": "Frete grátis acima de R$ 299",
+    "title": "Fabricado em Franca, entregue em todo Brasil",
+    "subtitle": "Somos fabricantes — sem loja física, sem intermediários. O couro é curtido aqui, o par sai daqui, chega na sua porta em até 2 dias úteis.",
+    "cta_primary": "Ver Modelos",
+    "cta_secondary": "Tirar uma dúvida",
+    "trust_1": "📦 Postagem em 2 dias úteis",
+    "trust_2": "🇧🇷 Fabricado em Franca-SP",
+    "trust_3": "🔄 Troca de numeração grátis"
+  },
+  "stats": {
+    "clientes": "4.800+",
+    "anos": "12",
+    "cidades": "340+",
+    "modelos": "47",
+    "avaliacao": "4.8/5"
+  },
+  "collections": {
+    "title": "Modelos Disponíveis",
+    "subtitle": "Produção própria. Cada par costurado e acabado na nossa fábrica antes de sair.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Clássica",
+        "description": "Couro bovino wet-blue, palmilha crust, solado borracha injetada. Bico redondo, cano médio de 26 cm. Peso: 620 g. Aguenta uso diário de até 12h.",
+        "price": "R$ 349,00",
+        "badge": "Mais saída",
+        "cta": "Consultar tamanhos",
+        "image": "images/boot-classic.png"
+      },
+      {
+        "id": 2,
+        "name": "Western",
+        "description": "Cano de 30 cm, biqueira quadrada em aço, salto 4 cm em madeira revestida. A mais pedida por parceiros de rodeios de GO e MS.",
+        "price": "R$ 429,00",
+        "badge": "Favorita do campo",
+        "cta": "Consultar tamanhos",
+        "image": "images/boot-western.png"
+      },
+      {
+        "id": 3,
+        "name": "Executiva",
+        "description": "Couro polidouro de alta polição, forro interno em camurça natural. Bico fino, solado couro. Tem passado em reuniões de banco e escritório sem desconforto.",
+        "price": "R$ 389,00",
+        "badge": "Nova linha",
+        "cta": "Consultar tamanhos",
+        "image": "images/boot-executive.png"
+      }
+    ]
+  },
+  "services": {
+    "title": "Por que comprar direto da fábrica",
+    "subtitle": "Fabricante desde 2012 — o que você paga vai inteiro para quem faz, não para intermediários",
+    "items": [
+      {
+        "icon": "trophy",
+        "title": "Couro curtido aqui mesmo",
+        "description": "Trabalhamos com curtumes parceiros de Franca. Cada lote é conferido antes de entrar na produção — recusamos couro com irregularidade."
+      },
+      {
+        "icon": "truck",
+        "title": "Postagem em 48 horas",
+        "description": "Todo pedido confirmado até as 14h é postado no dia seguinte. Enviamos nota fiscal e código de rastreio por WhatsApp."
+      },
+      {
+        "icon": "exchange",
+        "title": "Troca de número sem custo",
+        "description": "Se chegou no tamanho errado, nós pagamos o frete de volta e mandamos o número certo. Prazo de 30 dias, sem formulário complicado."
+      },
+      {
+        "icon": "shield",
+        "title": "Garantia de 18 meses",
+        "description": "Cobre defeito de costura, sola descollando e rachadura de couro por falha de curtimento. Temos setor de pós-venda — não só uma cláusula no site."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Quem já comprou conta",
+    "subtitle": "Reviews coletados diretamente por WhatsApp e Google Meu Negócio",
+    "items": [
+      {
+        "name": "Marcos Ferreira",
+        "role": "Fortaleza, CE",
+        "rating": 4,
+        "text": "Bota chegou bem embalada, couro bom de verdade. Só o prazo que demorou um dia a mais que o previsto — mas o atendimento avisou antes, tudo bem. Já estou de olho na western.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Silvana Duarte",
+        "role": "Uberlândia, MG",
+        "rating": 5,
+        "text": "Comprei de presente pro meu marido. Ele usou na festa junina e já perguntou se tem na cor marrom. Qualidade boa mesmo, não soltou nada e o cano ficou firme.",
+        "avatar": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Fábio Nascimento",
+        "role": "Curitiba, PR",
+        "rating": 5,
+        "text": "Terceira bota que compro aqui. As outras duas têm 3 anos e tão firmes ainda. É o tipo de coisa que você indica sem medo de passar vergonha depois.",
+        "avatar": "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=100&h=100&fit=crop&crop=faces"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Fale com a gente",
+    "subtitle": "Respondemos por WhatsApp em horário comercial. Sem chatbot, sem fila de espera.",
+    "success_message": "Mensagem enviada! Abrindo WhatsApp para continuar o atendimento."
+  },
+  "footer": {
+    "description": "Fabricante de calçados em Franca-SP desde 2012. Vendemos direto — sem loja física, sem franquia.",
+    "copyright": "© 2026 Botas Rei Calçados Ltda. · CNPJ 12.345.678/0001-90 · Franca-SP"
+  }
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Botas Rei — Fabricante de botas em Franca-SP desde 2012. Vendemos direto da fábrica. Entrega em 2 dias úteis, troca de numeração grátis." />
+  <title data-content="store.name">Botas Rei</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 22 26" fill="var(--accent)" aria-hidden="true">
+          <rect x="3" y="1" width="9" height="17" rx="2"/>
+          <path d="M3 16h13c1.5 0 3.5 1.5 3.5 3.5V23a1 1 0 0 1-1 1H1.5a1 1 0 0 1-1-1v-2.5C.5 18 1.5 16 3 16z"/>
+        </svg>
+        <span class="logo-text" data-content="store.name">Botas Rei</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#colecoes">Modelos</a></li>
+        <li><a href="#servicos">Diferenciais</a></li>
+        <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#colecoes" class="btn-nav-cta">Ver Modelos</a>
+        <button class="nav-hamburger" aria-label="Menu" id="hamburger" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="mobile-menu">
+      <ul>
+        <li><a href="#colecoes">Modelos</a></li>
+        <li><a href="#servicos">Diferenciais</a></li>
+        <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <p class="hero-eyebrow animate-fade-up">
+          <span class="eyebrow-pulse"></span>
+          Franca&#8209;SP · Desde 2012
+        </p>
+        <h1 class="hero-title animate-fade-up delay-1" data-content="hero.title">
+          Fabricado em<br /><em>Franca,</em><br />entregue em<br />todo Brasil
+        </h1>
+        <p class="hero-subtitle animate-fade-up delay-2" data-content="hero.subtitle">
+          Somos fabricantes — sem loja física, sem intermediários. O couro é curtido aqui, o par sai daqui, chega na sua porta em até 2 dias úteis.
+        </p>
+        <div class="hero-ctas animate-fade-up delay-3">
+          <a href="#colecoes" class="btn-primary" data-content="hero.cta_primary">Ver Modelos</a>
+          <a href="#" class="btn-outline" id="hero-whatsapp" data-content="hero.cta_secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Tirar uma dúvida
+          </a>
+        </div>
+        <div class="hero-stats animate-fade-up delay-4">
+          <div class="hstat">
+            <strong class="stat-counter" data-content="stats.clientes">4.800+</strong>
+            <span>clientes</span>
+          </div>
+          <div class="hstat-sep"></div>
+          <div class="hstat">
+            <strong class="stat-counter" data-content="stats.anos">12</strong>
+            <span>anos de fábrica</span>
+          </div>
+          <div class="hstat-sep"></div>
+          <div class="hstat">
+            <strong class="stat-counter" data-content="stats.avaliacao">4.8/5</strong>
+            <span>avaliação</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image animate-fade-left delay-1">
+        <div class="hero-img-inner">
+          <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&h=1000&fit=crop&q=90"
+               alt="Bota de couro — Botas Rei, Franca-SP"
+               id="hero-img"
+               onerror="this.onerror=null; this.style.display='none';" />
+          <div class="hero-img-caption">Franca&#8209;SP · fábrica própria</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>CURTUME PARCEIRO DE FRANCA</span><span class="m-sep">·</span>
+      <span>COURO BOVINO GRAU A</span><span class="m-sep">·</span>
+      <span>SOLADO BORRACHA INJETADA</span><span class="m-sep">·</span>
+      <span>PALMILHA CRUST NATURAL</span><span class="m-sep">·</span>
+      <span>COSTURA REFORÇADA À MÃO</span><span class="m-sep">·</span>
+      <span>BIQUEIRA EM AÇO CERTIFICADA</span><span class="m-sep">·</span>
+      <span>ENTREGA JADLOG E CORREIOS</span><span class="m-sep">·</span>
+      <span>4.800+ PARES ENTREGUES</span><span class="m-sep">·</span>
+      <span>CURTUME PARCEIRO DE FRANCA</span><span class="m-sep">·</span>
+      <span>COURO BOVINO GRAU A</span><span class="m-sep">·</span>
+      <span>SOLADO BORRACHA INJETADA</span><span class="m-sep">·</span>
+      <span>PALMILHA CRUST NATURAL</span><span class="m-sep">·</span>
+      <span>COSTURA REFORÇADA À MÃO</span><span class="m-sep">·</span>
+      <span>BIQUEIRA EM AÇO CERTIFICADA</span><span class="m-sep">·</span>
+      <span>ENTREGA JADLOG E CORREIOS</span><span class="m-sep">·</span>
+      <span>4.800+ PARES ENTREGUES</span><span class="m-sep">·</span>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section id="colecoes" class="section">
+    <div class="section-container">
+      <header class="section-head reveal">
+        <span class="section-num" aria-hidden="true">01</span>
+        <div>
+          <span class="section-label">Modelos</span>
+          <h2 data-content="collections.title">Modelos Disponíveis</h2>
+          <p class="section-sub" data-content="collections.subtitle">Produção própria. Cada par costurado e acabado na nossa fábrica antes de sair.</p>
+        </div>
+      </header>
+
+      <div class="products-grid">
+
+        <!-- Featured -->
+        <div class="product-card product-featured reveal">
+          <div class="product-img-wrap">
+            <span class="product-badge featured-badge" data-content="collections.items.1.badge">Favorita do campo</span>
+            <img src="https://images.unsplash.com/photo-1525814230241-7f78c608c54c?w=700&h=680&fit=crop&q=88"
+                 alt="Bota Western — cano 30 cm, biqueira em aço, salto madeira 4 cm"
+                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('img-fallback')" />
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 data-content="collections.items.1.name">Western</h3>
+              <strong class="product-price" data-content="collections.items.1.price">R$ 429,00</strong>
+            </div>
+            <p data-content="collections.items.1.description">Cano de 30 cm, biqueira quadrada em aço, salto 4 cm em madeira revestida. A mais pedida por parceiros de rodeios de GO e MS.</p>
+            <a href="#" class="btn-product" data-product="Western" data-content="collections.items.1.cta">Consultar tamanhos</a>
+          </div>
+        </div>
+
+        <!-- Aside column -->
+        <div class="products-col">
+          <div class="product-card reveal" data-delay="100">
+            <div class="product-img-wrap">
+              <span class="product-badge" data-content="collections.items.0.badge">Mais saída</span>
+              <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=600&h=320&fit=crop&q=85"
+                   alt="Bota Clássica — couro bovino wet-blue, cano médio 26 cm"
+                   onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('img-fallback')" />
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <h3 data-content="collections.items.0.name">Clássica</h3>
+                <strong class="product-price" data-content="collections.items.0.price">R$ 349,00</strong>
+              </div>
+              <p data-content="collections.items.0.description">Couro bovino wet-blue, palmilha crust, solado borracha injetada. Bico redondo, cano médio de 26 cm. Peso: 620 g. Aguenta uso diário de até 12h.</p>
+              <a href="#" class="btn-product" data-product="Clássica" data-content="collections.items.0.cta">Consultar tamanhos</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-delay="200">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new" data-content="collections.items.2.badge">Nova linha</span>
+              <img src="https://images.unsplash.com/photo-1777987601677-3059be0e1388?w=600&h=320&fit=crop&q=85"
+                   alt="Bota Executiva — couro polidouro, forro camurça, bico fino"
+                   onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('img-fallback')" />
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <h3 data-content="collections.items.2.name">Executiva</h3>
+                <strong class="product-price" data-content="collections.items.2.price">R$ 389,00</strong>
+              </div>
+              <p data-content="collections.items.2.description">Couro polidouro de alta polição, forro interno em camurça natural. Bico fino, solado couro. Tem passado em reuniões de banco e escritório sem desconforto.</p>
+              <a href="#" class="btn-product" data-product="Executiva" data-content="collections.items.2.cta">Consultar tamanhos</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicos" class="section section-alt">
+    <div class="section-container">
+      <header class="section-head reveal">
+        <div>
+          <span class="section-label">Diferenciais</span>
+          <h2 data-content="services.title">Por que comprar direto da fábrica</h2>
+          <p class="section-sub" data-content="services.subtitle">Fabricante desde 2012 — o que você paga vai inteiro para quem faz, não para intermediários</p>
+        </div>
+      </header>
+      <div class="services-grid">
+
+        <div class="service-item reveal" data-delay="0">
+          <div class="service-item-top">
+            <span class="service-item-num">01</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H3.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h2.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+          </div>
+          <h3 data-content="services.items.0.title">Couro curtido aqui mesmo</h3>
+          <p data-content="services.items.0.description">Trabalhamos com curtumes parceiros de Franca. Cada lote é conferido antes de entrar na produção — recusamos couro com irregularidade.</p>
+        </div>
+
+        <div class="service-item reveal" data-delay="100">
+          <div class="service-item-top">
+            <span class="service-item-num">02</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8Z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+          </div>
+          <h3 data-content="services.items.1.title">Postagem em 48 horas</h3>
+          <p data-content="services.items.1.description">Todo pedido confirmado até as 14h é postado no dia seguinte. Enviamos nota fiscal e código de rastreio por WhatsApp.</p>
+        </div>
+
+        <div class="service-item reveal" data-delay="200">
+          <div class="service-item-top">
+            <span class="service-item-num">03</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg>
+            </div>
+          </div>
+          <h3 data-content="services.items.2.title">Troca de número sem custo</h3>
+          <p data-content="services.items.2.description">Se chegou no tamanho errado, nós pagamos o frete de volta e mandamos o número certo. Prazo de 30 dias, sem formulário complicado.</p>
+        </div>
+
+        <div class="service-item reveal" data-delay="300">
+          <div class="service-item-top">
+            <span class="service-item-num">04</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+          </div>
+          <h3 data-content="services.items.3.title">Garantia de 18 meses</h3>
+          <p data-content="services.items.3.description">Cobre defeito de costura, sola descolando e rachadura de couro por falha de curtimento. Temos setor de pós-venda — não só uma cláusula no site.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="depoimentos" class="section">
+    <div class="section-container">
+      <header class="section-head reveal">
+        <div>
+          <span class="section-label">Avaliações</span>
+          <h2 data-content="testimonials.title">Quem já comprou conta</h2>
+          <p class="section-sub" data-content="testimonials.subtitle">Reviews coletados diretamente por WhatsApp e Google Meu Negócio</p>
+        </div>
+      </header>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal" data-delay="0">
+          <div class="t-stars" aria-label="4 de 5 estrelas">★★★★<span class="star-empty">★</span></div>
+          <blockquote class="t-text" data-content="testimonials.items.0.text">
+            "Bota chegou bem embalada, couro bom de verdade. Só o prazo que demorou um dia a mais que o previsto — mas o atendimento avisou antes, tudo bem. Já estou de olho na western."
+          </blockquote>
+          <div class="t-author">
+            <div class="t-avatar-initials" aria-hidden="true">MF</div>
+            <div>
+              <strong data-content="testimonials.items.0.name">Marcos Ferreira</strong>
+              <span data-content="testimonials.items.0.role">Fortaleza, CE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card t-offset reveal" data-delay="150">
+          <div class="t-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <blockquote class="t-text" data-content="testimonials.items.1.text">
+            "Comprei de presente pro meu marido. Ele usou na festa junina e já perguntou se tem na cor marrom. Qualidade boa mesmo, não soltou nada e o cano ficou firme."
+          </blockquote>
+          <div class="t-author">
+            <div class="t-avatar-initials" aria-hidden="true">SD</div>
+            <div>
+              <strong data-content="testimonials.items.1.name">Silvana Duarte</strong>
+              <span data-content="testimonials.items.1.role">Uberlândia, MG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" data-delay="300">
+          <div class="t-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <blockquote class="t-text" data-content="testimonials.items.2.text">
+            "Terceira bota que compro aqui. As outras duas têm 3 anos e tão firmes ainda. É o tipo de coisa que você indica sem medo de passar vergonha depois."
+          </blockquote>
+          <div class="t-author">
+            <div class="t-avatar-initials" aria-hidden="true">FN</div>
+            <div>
+              <strong data-content="testimonials.items.2.name">Fábio Nascimento</strong>
+              <span data-content="testimonials.items.2.role">Curitiba, PR</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contato" class="section section-alt">
+    <div class="section-container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="section-label">Contato</span>
+          <h2 data-content="contact.title">Fale com a gente</h2>
+          <p class="contact-lead" data-content="contact.subtitle">Respondemos por WhatsApp em horário comercial. Sem chatbot, sem fila de espera.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.47 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp / Telefone</strong>
+                <a href="tel:+5516991234567" data-content="store.phone">(16) 99123-4567</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:contato@botasrei.com.br" data-content="store.email">contato@botasrei.com.br</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Fábrica</strong>
+                <span data-content="store.address">Rua Tiradentes, 890 — Franca, SP · 14400-000</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" id="contact-whatsapp" class="btn-whatsapp-cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-form-wrap reveal" data-delay="150">
+          <form id="contact-form" novalidate>
+            <h3>Nos mande uma mensagem</h3>
+            <p class="form-lead">Preencha e continuamos a conversa direto no WhatsApp.</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="telefone">WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(16) 99999-9999" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interesse">Qual modelo te interessa?</label>
+              <select id="interesse" name="interesse">
+                <option value="">Selecione...</option>
+                <option value="Clássica">Bota Clássica — R$ 349</option>
+                <option value="Western">Bota Western — R$ 429</option>
+                <option value="Executiva">Bota Executiva — R$ 389</option>
+                <option value="outro">Outro / Não sei ainda</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Qual número você calça? Tem alguma dúvida sobre os modelos?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-form-submit" id="form-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span class="btn-text">Continuar no WhatsApp</span>
+              <span class="btn-loading" style="display:none">Abrindo WhatsApp…</span>
+            </button>
+            <p class="form-hint">Ao enviar, seu WhatsApp abre com as informações preenchidas.</p>
+            <div class="form-success" id="form-success" style="display:none" data-content="contact.success_message">
+              ✅ Abrindo WhatsApp — continue o atendimento por lá.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <svg class="logo-svg" viewBox="0 0 22 26" fill="var(--accent)" aria-hidden="true">
+              <rect x="3" y="1" width="9" height="17" rx="2"/>
+              <path d="M3 16h13c1.5 0 3.5 1.5 3.5 3.5V23a1 1 0 0 1-1 1H1.5a1 1 0 0 1-1-1v-2.5C.5 18 1.5 16 3 16z"/>
+            </svg>
+            <span class="logo-text" data-content="store.name">Botas Rei</span>
+          </a>
+          <p data-content="footer.description">Fabricante de calçados em Franca-SP desde 2012. Vendemos direto — sem loja física, sem franquia.</p>
+          <p class="footer-instagram"><span data-content="store.instagram">@botasrei.franca</span></p>
+        </div>
+        <div class="footer-nav-group">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="#colecoes">Modelos</a></li>
+            <li><a href="#servicos">Diferenciais</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h5>Contato</h5>
+          <ul>
+            <li><a href="tel:+5516991234567" data-content="store.phone">(16) 99123-4567</a></li>
+            <li><a href="mailto:contato@botasrei.com.br" data-content="store.email">contato@botasrei.com.br</a></li>
+            <li><span data-content="store.address">Franca-SP · 14400-000</span></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h5>Políticas</h5>
+          <ul>
+            <li><a href="#">Troca e Devolução</a></li>
+            <li><a href="#">Garantia</a></li>
+            <li><a href="#">Frete e Entrega</a></li>
+            <li><a href="#">Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-content="footer.copyright">© 2026 Botas Rei Calçados Ltda. · CNPJ 12.345.678/0001-90 · Franca-SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a id="whatsapp-float" href="#" title="Falar no WhatsApp" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
