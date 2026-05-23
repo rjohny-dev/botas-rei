@@ -64,7 +64,7 @@
   }
 
   function loadDefaultWhatsApp() {
-    const defaultNumber = '5516991234567';
+    const defaultNumber = '5516999999999';
     const msg = encodeURIComponent('Olá! Vi o site da Botas Rei e quero saber mais sobre os produtos.');
     const url = 'https://wa.me/' + defaultNumber + '?text=' + msg;
     const links = document.querySelectorAll('#hero-whatsapp, #contact-whatsapp, #whatsapp-float');

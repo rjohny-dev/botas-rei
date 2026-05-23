@@ -127,7 +127,7 @@
 
       // Abre WhatsApp imediatamente — sem delay artificial
       const stored = window.SiteContent ? window.SiteContent.get() : null;
-      const number = (stored && stored.store && stored.store.whatsapp) ? stored.store.whatsapp : '5516991234567';
+      const number = (stored && stored.store && stored.store.whatsapp) ? stored.store.whatsapp : '5516999999999';
       const nome = form.nome ? form.nome.value : '';
       const interesse = form.interesse ? form.interesse.value : '';
       const mensagem = form.mensagem ? form.mensagem.value : '';
